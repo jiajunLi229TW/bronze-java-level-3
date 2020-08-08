@@ -12,6 +12,7 @@ public class ParkingBoy {
         // TODO: Implement the method according to test
         // <-start-
         ParkingResult checkIn = parkingLot.park(car);
+        lastErrorMessage = checkIn.getMessage();
         return checkIn.getTicket();
         // ---end->
     }
