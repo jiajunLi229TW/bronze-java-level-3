@@ -20,6 +20,7 @@ public class ParkingBoy {
         // TODO: Implement the method according to test
         // <-start-
         FetchingResult checkOut = parkingLot.fetch(ticket);
+        lastErrorMessage = checkOut.getMessage();
         return checkOut.getCar();
         // ---end->
     }
